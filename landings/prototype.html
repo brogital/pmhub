@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Прототип: AI‑ассистент для брифа — PM Hub</title>
+	<link rel="stylesheet" href="../assets/css/styles.css">
+	<script defer src="../assets/js/main.js"></script>
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="../index.html">PM Hub</a>
+			<nav class="nav" id="site-nav">
+				<a href="../articles/index.html">Статьи</a>
+				<a href="./index.html" aria-current="page">Лендосы</a>
+			</nav>
+			<button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Меню</button>
+		</div>
+	</header>
+	<main>
+		<section class="section hero">
+			<div class="container">
+				<div class="eyebrow">Прототип</div>
+				<h1>AI‑ассистент, который собирает бриф и приоритизирует задачи</h1>
+				<p class="muted">Расскажите о своей задаче, а мы вернём план из 5 шагов и примерные сроки.</p>
+				<div class="actions">
+					<a class="button" href="#lead">Оставить заявку</a>
+					<a class="button secondary" href="./index.html">Все лендосы</a>
+				</div>
+			</div>
+		</section>
+		<section class="section">
+			<div class="container card-grid">
+				<article class="card">
+					<h3>1. Быстрый бриф</h3>
+					<p>3 вопроса — достаточно, чтобы оценить, как помочь вам быстрее.</p>
+				</article>
+				<article class="card">
+					<h3>2. Приоритеты</h3>
+					<p>Раскладываем бэклог по важности и сложности, чтобы сэкономить время.</p>
+				</article>
+				<article class="card">
+					<h3>3. План и сроки</h3>
+					<p>Отправим примерный план из 5 шагов и оценку времени.</p>
+				</article>
+				<article class="card">
+					<h3>4. Экономия бюджета</h3>
+					<p>Покажем, где можно не тратить впустую и что даст эффект.</p>
+				</article>
+			</div>
+		</section>
+		<section id="lead" class="section">
+			<div class="container">
+				<h2>Оставьте заявку</h2>
+				<p class="muted">Мы свяжемся в течение 1 рабочего дня. Пока форма не работает — это прототип.</p>
+				<form class="form" data-lead-form>
+					<input class="input" type="text" name="name" placeholder="Имя" required>
+					<input class="input" type="email" name="email" placeholder="Email" required>
+					<textarea class="textarea" name="about" placeholder="Опишите задачу" required></textarea>
+					<p class="helper">Нажимая «Отправить», вы соглашаетесь с обработкой данных</p>
+					<button class="button" type="submit">Отправить</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="site-footer">
+		<div class="container section-sm">
+			<p>© <span id="year"></span> PM Hub</p>
+		</div>
+	</footer>
+</body>
+</html>
