@@ -114,3 +114,77 @@ img, video { max-width: 100%; height: auto; display: block; }
 .muted { color: var(--muted); }
 hr { border: none; height: 1px; background: var(--border); margin: 24px 0; }
 
+
+
+/* Additional styles for layout and responsiveness */
+.tile-grid, .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensure items wrap nicely */
+}
+
+.tile, .card {
+    margin-bottom: 16px; /* Add some vertical spacing between items */
+}
+
+@media (max-width: 720px) {
+    .tile-grid, .card-grid {
+        grid-template-columns: 1fr; /* Stack items on very small screens */
+    }
+    .tile, .card {
+        grid-column: span 1; /* Override span 12 for consistency */
+    }
+}
+
+/* Adjustments for a more 'Apple-like' feel */
+body {
+    line-height: 1.4;
+}
+
+h1, h2, h3 {
+    letter-spacing: -0.03em; /* Tighter letter spacing */
+}
+
+.button {
+    border-radius: 10px; /* Slightly less rounded buttons */
+    font-weight: 500; /* Lighter font weight for buttons */
+}
+
+.button.secondary {
+    background: rgba(0,0,0,0.05); /* Lighter background for secondary buttons */
+    border-color: transparent; /* No border for secondary buttons */
+}
+
+.button:hover {
+    filter: brightness(1.05); /* Subtle hover effect */
+}
+
+.site-header {
+    border-bottom: none; /* Remove bottom border from header */
+    box-shadow: 0 1px 0 rgba(0,0,0,0.08); /* Subtle shadow for header */
+}
+
+.nav a {
+    border-radius: 8px; /* Slightly smaller border-radius for nav items */
+}
+
+.card, .tile {
+    border: none; /* Remove borders */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Lighter shadow */
+}
+
+.tile {
+    background: #f9f9f9; /* Slightly off-white background for tiles */
+}
+
+.tile:hover {
+    background: #f0f0f0; /* Subtle hover for tiles */
+}
+
+.hero h1 {
+    font-size: clamp(32px, 7vw, 64px); /* Larger hero title */
+}
+
+.hero p {
+    font-size: clamp(18px, 3vw, 20px); /* Larger hero paragraph */
+}
+
+
